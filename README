@@ -1,0 +1,19 @@
+# Ganesanu Gigi-Florin 334CA Tema1
+
+---In aceasta tema am inceput prin a paraleliza functia
+run_algorithm. Acolo am observat ca pentru a putea 
+sa paralelizam functia trebuia sa scot parametrii vechi
+si sa ii inlocuiesc cu void *. Apoi m am gandit sa mi
+creez o structura in care sa mi tin toti parametrii 
+de care am nevoie, adica id, numarul de threaduri, 
+bariera etc.
+  In fisierul tema1_par.c am facut un for in care mi am
+initializat vectorul de threaduri, i-am creat si le-am
+dat join, apoi am distrus bariera si am facut free la 
+memoria alocata.
+  In final m am intors la functia run_algoritm si am
+inceput sa paralelizez functiile cu aceleasi formule 
+ca si in laborator. La sortare am modificat functia 
+compare pentru ca cea veche avea complexitate O(n) si
+cea noua este de complexitate O(1), asta ajuta la
+acceleratie.
